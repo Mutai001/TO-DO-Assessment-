@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-image: url("./images/bg-desktop-light.jpg");
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px 200px 0 200px;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 10px;
+}
+
+.logo p {
+    float: right;
+    margin-top: 0px;
+}
+
+input {
+    margin-top: 20px;
+    color: #161515;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+}
+
+input :placeholder-shown {
+    width: 24px;
+    height: 24px;
+    background-color: #2196F3;
+    border-radius: 50%;
+}
+
+.todo-list {
+    margin-top: 20px;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.todo-list ul li {
+    padding: 5px;
+    list-style: none;
+    padding: auto;
+}
+
+.dot-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid rgb(85, 79, 79);
+    font: 12px arial, helvetica;
+    text-align: center;
+}
+
+.dot-list li:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    background-color: #2196F3;
+    border-radius: 50%;
+}
+
+.list-2 {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+
+.list-2 li {
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.list-2 .left-items {
+    font: 10px;
+}
+
+
+/* Tablet */
+
+@media (max-width: 768px) {
+    .container {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+    .logo {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 20px;
+    }
+    .logo p {
+        margin-top: 10px;
+    }
+    input {
+        padding: 8px;
+        font-size: 14px;
+    }
+    .dot-list li {
+        font-size: 16px;
+    }
+    .list-2 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .list-2 li {
+        margin: 5px 0;
+    }
+    .list-2 .left-items {
+        font-size: 12px;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 480px) {
+    body {
+        background-image: url("./images/bg-mobile-light.jpg");
+    }
+    .container {
+        margin: 20px 10px;
+        padding: 0 10px;
+    }
+    .logo {
+        font-size: 18px;
+    }
+    input {
+        padding: 6px;
+        font-size: 12px;
+    }
+    .dot-list li {
+        font-size: 14px;
+    }
+    .list-2 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .list-2 li {
+        margin: 5px 0;
+    }
+    .list-2 .left-items {
+        font-size: 10px;
+    }
+}
